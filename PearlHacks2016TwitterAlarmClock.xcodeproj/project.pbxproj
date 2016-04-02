@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6F14BA011CAFE3D20014098E /* waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F14BA001CAFE3D20014098E /* waves.mp3 */; };
+		6F4A6F8E1CAFE7890047A91C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4A6F8A1CAFE7890047A91C /* Fabric.framework */; };
+		6F4A6F8F1CAFE7890047A91C /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4A6F8B1CAFE7890047A91C /* TwitterKit.framework */; };
+		6F4A6F901CAFE7890047A91C /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6F4A6F8C1CAFE7890047A91C /* TwitterKitResources.bundle */; };
+		6F4A6F911CAFE7890047A91C /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4A6F8D1CAFE7890047A91C /* TwitterCore.framework */; };
 		6FD190841CAFA43E00D428F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD190831CAFA43E00D428F9 /* AppDelegate.swift */; };
 		6FD190861CAFA43F00D428F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD190851CAFA43F00D428F9 /* ViewController.swift */; };
 		6FD190891CAFA43F00D428F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FD190871CAFA43F00D428F9 /* Main.storyboard */; };
@@ -22,6 +26,10 @@
 
 /* Begin PBXFileReference section */
 		6F14BA001CAFE3D20014098E /* waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = waves.mp3; sourceTree = "<group>"; };
+		6F4A6F8A1CAFE7890047A91C /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		6F4A6F8B1CAFE7890047A91C /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = SOURCE_ROOT; };
+		6F4A6F8C1CAFE7890047A91C /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
+		6F4A6F8D1CAFE7890047A91C /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = SOURCE_ROOT; };
 		6FD190801CAFA43E00D428F9 /* PearlHacks2016TwitterAlarmClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PearlHacks2016TwitterAlarmClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD190831CAFA43E00D428F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FD190851CAFA43F00D428F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F4A6F8E1CAFE7890047A91C /* Fabric.framework in Frameworks */,
+				6F4A6F911CAFE7890047A91C /* TwitterCore.framework in Frameworks */,
+				6F4A6F8F1CAFE7890047A91C /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +77,10 @@
 		6FD190821CAFA43E00D428F9 /* PearlHacks2016TwitterAlarmClock */ = {
 			isa = PBXGroup;
 			children = (
+				6F4A6F8A1CAFE7890047A91C /* Fabric.framework */,
+				6F4A6F8B1CAFE7890047A91C /* TwitterKit.framework */,
+				6F4A6F8C1CAFE7890047A91C /* TwitterKitResources.bundle */,
+				6F4A6F8D1CAFE7890047A91C /* TwitterCore.framework */,
 				6F14BA001CAFE3D20014098E /* waves.mp3 */,
 				6FD190991CAFB9E000D428F9 /* carpediem.jpg */,
 				6FD190971CAFAE7E00D428F9 /* twitter.png */,
@@ -92,6 +107,7 @@
 				6FD1907C1CAFA43E00D428F9 /* Sources */,
 				6FD1907D1CAFA43E00D428F9 /* Frameworks */,
 				6FD1907E1CAFA43E00D428F9 /* Resources */,
+				6F4A6F891CAFE7160047A91C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -140,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F4A6F901CAFE7890047A91C /* TwitterKitResources.bundle in Resources */,
 				6FD1909A1CAFB9E000D428F9 /* carpediem.jpg in Resources */,
 				6FD1908E1CAFA43F00D428F9 /* LaunchScreen.storyboard in Resources */,
 				6FD1908B1CAFA43F00D428F9 /* Assets.xcassets in Resources */,
@@ -151,6 +168,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F4A6F891CAFE7160047A91C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run ded6406565981f8f4254da18dc7c5334f4c6a400 dc9f02465e868165b1f9c5ea94994f13d3d059beedf676d4f54ffde27a352b46";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6FD1907C1CAFA43E00D428F9 /* Sources */ = {
@@ -273,6 +306,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PearlHacks2016TwitterAlarmClock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.duke.scottyshaw.PearlHacks2016TwitterAlarmClock;
@@ -284,6 +321,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PearlHacks2016TwitterAlarmClock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.duke.scottyshaw.PearlHacks2016TwitterAlarmClock;
