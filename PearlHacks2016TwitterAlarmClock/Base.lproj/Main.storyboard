@@ -20,11 +20,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carpediem.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Nax-xj-GkA">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3c2-Fv-gRM">
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3c2-Fv-gRM">
                                 <rect key="frame" x="77" y="174" width="446" height="251"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="75"/>
                                 <color key="tintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="start">
+                                    <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -68,11 +69,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carpediem.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IiT-Wz-uiI">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4L-ns-FxL">
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4L-ns-FxL">
                                 <rect key="frame" x="77" y="174" width="446" height="251"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="75"/>
                                 <color key="tintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="main">
+                                    <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -93,6 +95,9 @@
                             <constraint firstAttribute="trailing" secondItem="IiT-Wz-uiI" secondAttribute="trailing" id="sf6-eS-e14"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="k4L-ns-FxL" id="9Sc-X1-gPi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TAS-54-5Fy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,11 +118,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carpediem.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cMm-YP-zAe">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikc-5o-4ur">
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikc-5o-4ur">
                                 <rect key="frame" x="77" y="174" width="446" height="251"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="75"/>
                                 <color key="tintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="log in">
+                                    <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -138,6 +144,9 @@
                             <constraint firstItem="ikc-5o-4ur" firstAttribute="centerX" secondItem="YtP-2W-2io" secondAttribute="centerX" id="z0M-dR-HC6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="ikc-5o-4ur" id="8cc-CK-hhC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y06-MV-av6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

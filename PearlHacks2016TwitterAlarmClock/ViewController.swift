@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var startTime = NSTimeInterval()
+    
+    var timer = NSTimer()
+    
     var isLoggedIn: Bool = false
     
     @IBOutlet weak var startButton: UIButton!
@@ -26,11 +30,39 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        validateTimer()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func validateTimer() {
+        let repeatingFunction: Selector = "pulseButton"
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: repeatingFunction, userInfo: nil, repeats: true)
+        startTime = NSDate.timeIntervalSinceReferenceDate()
+    }
+    
+    func pulseButton() {
+        let currentTime = NSDate.timeIntervalSinceReferenceDate()
+        
+        // calculate elapsed time
+        let elapsedTime = currentTime - startTime
+        let sizeOffset = elapsedTime % 10.0
+        var sizeAdjustment: Double = 0.0
+//        var alphaAdjustment: Double = 0.0
+        if (sizeOffset < 5) {
+            sizeAdjustment = (80.0 + 4 * sizeOffset) / 100.0
+//            alphaAdjustment = (80.0 + 4 * sizeOffset) / 100.0
+        }
+        else {
+            sizeAdjustment = (120.0 - 4 * sizeOffset) / 100.0
+//            alphaAdjustment = (120.0 - 4 * sizeOffset) / 100.0
+        }
+        startButton.titleLabel!.font =  UIFont(name: (startButton.titleLabel?.font?.fontName)!, size: 75.0 * CGFloat(sizeAdjustment))
+//        startButton.titleLabel!.textColor = UIColor(red: 0.0, green: 1, blue: 1, alpha: CGFloat(alphaAdjustment))
     }
 }
 
