@@ -28,8 +28,12 @@
                         <constraints>
                             <constraint firstItem="DTJ-Xg-UDX" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="5Ny-Om-v4M"/>
                             <constraint firstItem="dlv-oc-VFL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="7Vm-aG-6py"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="dlv-oc-VFL" secondAttribute="bottom" id="FtX-Ig-PqX"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="dlv-oc-VFL" secondAttribute="bottom" id="Jep-mR-kDa"/>
                             <constraint firstItem="DTJ-Xg-UDX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Miw-XO-Q6H"/>
+                            <constraint firstItem="dlv-oc-VFL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="T7n-Je-WvD"/>
+                            <constraint firstAttribute="trailing" secondItem="dlv-oc-VFL" secondAttribute="trailing" id="ao1-FQ-OXX"/>
+                            <constraint firstItem="dlv-oc-VFL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="e8X-XF-cN8"/>
                             <constraint firstAttribute="trailing" secondItem="dlv-oc-VFL" secondAttribute="trailing" id="gh7-LQ-n9j"/>
                             <constraint firstItem="dlv-oc-VFL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="hJB-Ef-oig"/>
                             <constraint firstItem="dlv-oc-VFL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="jpN-ho-sRJ"/>

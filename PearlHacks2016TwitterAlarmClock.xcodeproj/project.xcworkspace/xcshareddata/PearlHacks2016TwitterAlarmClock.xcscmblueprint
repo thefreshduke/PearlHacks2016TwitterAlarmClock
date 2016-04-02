@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "37A0DE85B6EA63B13605BEC162F6E32D4736727E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "37A0DE85B6EA63B13605BEC162F6E32D4736727E" : 0,
+    "4A762B727C72E1EAA39EAEA3996B9BD9367C15B4" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0E718C37-AB90-418A-8E46-18230A1F854E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "37A0DE85B6EA63B13605BEC162F6E32D4736727E" : "PearlHacks2016TwitterAlarmClock\/",
+    "4A762B727C72E1EAA39EAEA3996B9BD9367C15B4" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PearlHacks2016TwitterAlarmClock",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PearlHacks2016TwitterAlarmClock.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:thefreshduke\/PearlHacks2016TwitterAlarmClock.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "37A0DE85B6EA63B13605BEC162F6E32D4736727E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:thefreshduke\/PrimeNumberTutorial.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4A762B727C72E1EAA39EAEA3996B9BD9367C15B4"
+    }
+  ]
+}

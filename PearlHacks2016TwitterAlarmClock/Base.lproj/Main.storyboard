@@ -27,6 +27,9 @@
                                 <state key="normal" title="start">
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="goToNextView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bow-AL-H3c"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -40,15 +43,20 @@
                             <constraint firstItem="Nax-xj-GkA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iIz-OH-tEB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="startButton" destination="3c2-Fv-gRM" id="6B0-Nq-Mar"/>
+                        <segue destination="3t0-zL-Y6d" kind="presentation" identifier="LoggedInSegue" id="TVW-Ah-Y2i"/>
+                        <segue destination="rrS-Vq-3lL" kind="presentation" identifier="NotLoggedInSegue" id="Buh-p5-9uj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="243" y="339"/>
         </scene>
-        <!--View Controller-->
+        <!--Alarm View Controller-->
         <scene sceneID="Uwf-wi-6r7">
             <objects>
-                <viewController id="3t0-zL-Y6d" sceneMemberID="viewController">
+                <viewController id="3t0-zL-Y6d" customClass="AlarmViewController" customModule="PearlHacks2016TwitterAlarmClock" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hvr-pP-JVt"/>
                         <viewControllerLayoutGuide type="bottom" id="yNw-KY-hO7"/>
@@ -56,17 +64,44 @@
                     <view key="view" contentMode="scaleToFill" id="3Qj-HY-W5r">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carpediem.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IiT-Wz-uiI">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4L-ns-FxL">
+                                <rect key="frame" x="77" y="174" width="446" height="251"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="75"/>
+                                <color key="tintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="main">
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToNextView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bvv-0n-EBR"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Hgb-rQ-L06"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IiT-Wz-uiI" firstAttribute="centerX" secondItem="3Qj-HY-W5r" secondAttribute="centerX" id="K2P-pP-FMe"/>
+                            <constraint firstItem="IiT-Wz-uiI" firstAttribute="leading" secondItem="3Qj-HY-W5r" secondAttribute="leading" id="Ked-HP-eLs"/>
+                            <constraint firstItem="k4L-ns-FxL" firstAttribute="centerX" secondItem="3Qj-HY-W5r" secondAttribute="centerX" id="N0T-5e-eQR"/>
+                            <constraint firstItem="IiT-Wz-uiI" firstAttribute="top" secondItem="3Qj-HY-W5r" secondAttribute="top" id="TeR-D8-WMP"/>
+                            <constraint firstItem="IiT-Wz-uiI" firstAttribute="centerY" secondItem="3Qj-HY-W5r" secondAttribute="centerY" id="U7G-q9-cJE"/>
+                            <constraint firstItem="k4L-ns-FxL" firstAttribute="centerY" secondItem="3Qj-HY-W5r" secondAttribute="centerY" id="UEv-4c-F2n"/>
+                            <constraint firstItem="yNw-KY-hO7" firstAttribute="top" secondItem="IiT-Wz-uiI" secondAttribute="bottom" id="oVD-sM-hjY"/>
+                            <constraint firstAttribute="trailing" secondItem="IiT-Wz-uiI" secondAttribute="trailing" id="sf6-eS-e14"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TAS-54-5Fy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1207" y="339"/>
         </scene>
-        <!--View Controller-->
+        <!--Twitter View Controller-->
         <scene sceneID="GdV-DE-Lzh">
             <objects>
-                <viewController id="rrS-Vq-3lL" sceneMemberID="viewController">
+                <viewController id="rrS-Vq-3lL" customClass="TwitterViewController" customModule="PearlHacks2016TwitterAlarmClock" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="u8L-DE-t1U"/>
                         <viewControllerLayoutGuide type="bottom" id="ffC-DX-Kls"/>
@@ -74,15 +109,45 @@
                     <view key="view" contentMode="scaleToFill" id="YtP-2W-2io">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carpediem.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cMm-YP-zAe">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikc-5o-4ur">
+                                <rect key="frame" x="77" y="174" width="446" height="251"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="75"/>
+                                <color key="tintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="log in">
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToNextView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eHY-SS-Jnq"/>
+                                    <segue destination="3t0-zL-Y6d" kind="show" id="A4c-Is-cst"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cMm-YP-zAe" firstAttribute="centerY" secondItem="YtP-2W-2io" secondAttribute="centerY" id="2AH-lU-TXH"/>
+                            <constraint firstItem="ikc-5o-4ur" firstAttribute="centerY" secondItem="YtP-2W-2io" secondAttribute="centerY" id="2fm-92-cqv"/>
+                            <constraint firstItem="cMm-YP-zAe" firstAttribute="top" secondItem="YtP-2W-2io" secondAttribute="top" id="4oq-vy-Dax"/>
+                            <constraint firstItem="cMm-YP-zAe" firstAttribute="leading" secondItem="YtP-2W-2io" secondAttribute="leading" id="LzL-r0-bIU"/>
+                            <constraint firstAttribute="trailing" secondItem="cMm-YP-zAe" secondAttribute="trailing" id="erP-2i-zIp"/>
+                            <constraint firstItem="ffC-DX-Kls" firstAttribute="top" secondItem="cMm-YP-zAe" secondAttribute="bottom" id="idi-5S-vbh"/>
+                            <constraint firstItem="cMm-YP-zAe" firstAttribute="centerX" secondItem="YtP-2W-2io" secondAttribute="centerX" id="otd-NA-b4g"/>
+                            <constraint firstItem="ikc-5o-4ur" firstAttribute="centerX" secondItem="YtP-2W-2io" secondAttribute="centerX" id="z0M-dR-HC6"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y06-MV-av6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="721" y="1120"/>
+            <point key="canvasLocation" x="718" y="1218"/>
         </scene>
     </scenes>
     <resources>
         <image name="carpediem.jpg" width="750" height="502"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="A4c-Is-cst"/>
+    </inferredMetricsTieBreakers>
 </document>

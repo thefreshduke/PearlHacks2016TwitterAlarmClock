@@ -15,6 +15,8 @@
 		6FD190961CAFA89A00D428F9 /* beach.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FD190951CAFA89A00D428F9 /* beach.png */; };
 		6FD190981CAFAE7E00D428F9 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FD190971CAFAE7E00D428F9 /* twitter.png */; };
 		6FD1909A1CAFB9E000D428F9 /* carpediem.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6FD190991CAFB9E000D428F9 /* carpediem.jpg */; };
+		6FD1909E1CAFC0E500D428F9 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD1909D1CAFC0E500D428F9 /* AlarmViewController.swift */; };
+		6FD190A01CAFC2EE00D428F9 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD1909F1CAFC2EE00D428F9 /* TwitterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		6FD190951CAFA89A00D428F9 /* beach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beach.png; sourceTree = "<group>"; };
 		6FD190971CAFAE7E00D428F9 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		6FD190991CAFB9E000D428F9 /* carpediem.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = carpediem.jpg; sourceTree = "<group>"; };
+		6FD1909D1CAFC0E500D428F9 /* AlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		6FD1909F1CAFC2EE00D428F9 /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				6FD1908A1CAFA43F00D428F9 /* Assets.xcassets */,
 				6FD1908C1CAFA43F00D428F9 /* LaunchScreen.storyboard */,
 				6FD1908F1CAFA43F00D428F9 /* Info.plist */,
+				6FD1909D1CAFC0E500D428F9 /* AlarmViewController.swift */,
+				6FD1909F1CAFC2EE00D428F9 /* TwitterViewController.swift */,
 			);
 			path = PearlHacks2016TwitterAlarmClock;
 			sourceTree = "<group>";
@@ -147,6 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FD190A01CAFC2EE00D428F9 /* TwitterViewController.swift in Sources */,
+				6FD1909E1CAFC0E500D428F9 /* AlarmViewController.swift in Sources */,
 				6FD190861CAFA43F00D428F9 /* ViewController.swift in Sources */,
 				6FD190841CAFA43E00D428F9 /* AppDelegate.swift in Sources */,
 			);
