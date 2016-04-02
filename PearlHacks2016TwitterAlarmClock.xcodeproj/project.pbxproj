@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F14BA011CAFE3D20014098E /* waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F14BA001CAFE3D20014098E /* waves.mp3 */; };
 		6FD190841CAFA43E00D428F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD190831CAFA43E00D428F9 /* AppDelegate.swift */; };
 		6FD190861CAFA43F00D428F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD190851CAFA43F00D428F9 /* ViewController.swift */; };
 		6FD190891CAFA43F00D428F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FD190871CAFA43F00D428F9 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F14BA001CAFE3D20014098E /* waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = waves.mp3; sourceTree = "<group>"; };
 		6FD190801CAFA43E00D428F9 /* PearlHacks2016TwitterAlarmClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PearlHacks2016TwitterAlarmClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD190831CAFA43E00D428F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FD190851CAFA43F00D428F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 		6FD190821CAFA43E00D428F9 /* PearlHacks2016TwitterAlarmClock */ = {
 			isa = PBXGroup;
 			children = (
+				6F14BA001CAFE3D20014098E /* waves.mp3 */,
 				6FD190991CAFB9E000D428F9 /* carpediem.jpg */,
 				6FD190971CAFAE7E00D428F9 /* twitter.png */,
 				6FD190951CAFA89A00D428F9 /* beach.png */,
@@ -140,6 +143,7 @@
 				6FD1909A1CAFB9E000D428F9 /* carpediem.jpg in Resources */,
 				6FD1908E1CAFA43F00D428F9 /* LaunchScreen.storyboard in Resources */,
 				6FD1908B1CAFA43F00D428F9 /* Assets.xcassets in Resources */,
+				6F14BA011CAFE3D20014098E /* waves.mp3 in Resources */,
 				6FD190981CAFAE7E00D428F9 /* twitter.png in Resources */,
 				6FD190891CAFA43F00D428F9 /* Main.storyboard in Resources */,
 				6FD190961CAFA89A00D428F9 /* beach.png in Resources */,
@@ -306,6 +310,7 @@
 				6FD190941CAFA43F00D428F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
