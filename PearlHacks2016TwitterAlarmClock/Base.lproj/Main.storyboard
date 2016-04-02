@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PearlHacks2016TwitterAlarmClock" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carpediem.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Nax-xj-GkA">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3c2-Fv-gRM">
+                                <rect key="frame" x="77" y="174" width="446" height="251"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="75"/>
+                                <color key="tintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="start">
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nax-xj-GkA" secondAttribute="bottom" id="1Up-We-GIh"/>
+                            <constraint firstAttribute="trailing" secondItem="Nax-xj-GkA" secondAttribute="trailing" id="73D-qy-8md"/>
+                            <constraint firstItem="3c2-Fv-gRM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MNQ-Gm-HqA"/>
+                            <constraint firstItem="Nax-xj-GkA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OBN-1f-5lE"/>
+                            <constraint firstItem="3c2-Fv-gRM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qh2-ec-bf1"/>
+                            <constraint firstItem="Nax-xj-GkA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bRR-8Y-Af0"/>
+                            <constraint firstItem="Nax-xj-GkA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gWk-LJ-0dC"/>
+                            <constraint firstItem="Nax-xj-GkA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iIz-OH-tEB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243" y="339"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Uwf-wi-6r7">
+            <objects>
+                <viewController id="3t0-zL-Y6d" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hvr-pP-JVt"/>
+                        <viewControllerLayoutGuide type="bottom" id="yNw-KY-hO7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Qj-HY-W5r">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TAS-54-5Fy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1207" y="339"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GdV-DE-Lzh">
+            <objects>
+                <viewController id="rrS-Vq-3lL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u8L-DE-t1U"/>
+                        <viewControllerLayoutGuide type="bottom" id="ffC-DX-Kls"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YtP-2W-2io">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y06-MV-av6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="721" y="1120"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="carpediem.jpg" width="750" height="502"/>
+    </resources>
+</document>
