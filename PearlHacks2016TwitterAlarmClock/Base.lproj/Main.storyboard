@@ -73,7 +73,7 @@
                                 <rect key="frame" x="77" y="174" width="446" height="251"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="75"/>
                                 <color key="tintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="main">
+                                <state key="normal" title="alarm">
                                     <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -128,7 +128,7 @@
                                 </state>
                                 <connections>
                                     <action selector="goToNextView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eHY-SS-Jnq"/>
-                                    <segue destination="3t0-zL-Y6d" kind="show" id="A4c-Is-cst"/>
+                                    <segue destination="3t0-zL-Y6d" kind="show" identifier="LoggedInSegue" id="A4c-Is-cst"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -157,6 +157,6 @@
         <image name="carpediem.jpg" width="750" height="502"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="A4c-Is-cst"/>
+        <segue reference="TVW-Ah-Y2i"/>
     </inferredMetricsTieBreakers>
 </document>

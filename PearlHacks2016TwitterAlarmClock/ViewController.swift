@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import TwitterKit
 
 class ViewController: UIViewController {
     
@@ -19,14 +20,18 @@ class ViewController: UIViewController {
     
     var isLoggedIn: Bool = false
     
+    var userSettings = NSUserDefaults.standardUserDefaults()
+    
     @IBOutlet weak var startButton: UIButton!
     
     @IBAction func goToNextView(sender: AnyObject) {
-        if (isLoggedIn) {
-            self.performSegueWithIdentifier("LoggedInSegue", sender: self)
-        }
-        else {
-            self.performSegueWithIdentifier("NotLoggedInSegue", sender: self)
+        Twitter.sharedInstance().logInWithCompletion { (session, error) in
+            if let _ = session {
+                self.performSegueWithIdentifier("LoggedInSegue", sender: self)
+            }
+            else {
+                NSLog("Login error: %@", error!.localizedDescription);
+            }
         }
     }
     
@@ -41,7 +46,7 @@ class ViewController: UIViewController {
         }
         
         wavesAudioPlayer?.numberOfLoops = -1
-        wavesAudioPlayer?.volume = 1
+        wavesAudioPlayer?.volume = 0.1
         wavesAudioPlayer?.play()
     }
     

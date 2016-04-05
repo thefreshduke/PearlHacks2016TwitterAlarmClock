@@ -31,7 +31,8 @@ class TwitterViewController: UIViewController {
                 )
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
                 self.presentViewController(alert, animated: true, completion: nil)
-            } else {
+            }
+            else {
                 NSLog("Login error: %@", error!.localizedDescription);
             }
         }
